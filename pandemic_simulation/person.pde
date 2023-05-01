@@ -100,7 +100,7 @@ class Person{
   }
   
   void act(float time){
-    if(frameCount>timeOfInfection+100 && inf){
+    if(frameCount>timeOfInfection+200 && inf){
       inf=false;
       immune = true;
     }

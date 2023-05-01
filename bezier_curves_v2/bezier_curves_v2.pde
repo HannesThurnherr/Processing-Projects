@@ -131,8 +131,6 @@ void drawCurve(Node c1, Node c2){
      float[] t2 = lerp(v1[0], v1[1], v2[0], v2[1],t+0.03 );
      
      line(t1[0], t1[1], t2[0], t2[1]);
-     
-     
   
 }
    

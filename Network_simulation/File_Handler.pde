@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner; 
 class File_Handler{
   
-  String netFolder = "Desktop/informatik/Java/processing/Network_simulation/Networks/";
+  String netFolder = "/Users/hannes/Desktop/informatik/Java/processing/Network_simulation/Networks/";
   
   int nr = 1;
   

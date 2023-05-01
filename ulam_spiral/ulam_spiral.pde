@@ -1,7 +1,7 @@
 import java.util.HashMap;
 
 
-int n = 250;
+int n = 1000;
 int s = 1000/n;
 HashMap<Integer, Boolean> map = new HashMap();
 

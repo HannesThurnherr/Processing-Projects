@@ -21,7 +21,7 @@ class Body{
     circle(this.posx, this.posy, this.size);
   }
   
-  void update(ArrayList<Body> bodies){
+  void update(ArrayList<Body> bodies, boolean bounceOffWalls){
     
     float forceX=0;
     float forceY=0;
@@ -38,8 +38,29 @@ class Body{
         }
     }
     
+    
     velx-=forceX;
     vely-=forceY;
+    
+    if(bounceOffWalls){
+    if(posx>1000){
+      posx=999;
+      velx*=-1;
+    }
+    if(posy>1000){
+      posy=999;
+      vely*=-1;
+    }
+    if(posx<0){
+      posx=1;
+      velx*=-1;
+    }
+    if(posy<0){
+      posy=1;
+      vely*=-1;
+    }
+  }
+
   }
   void updatePos(){
     posx+=velx*0.1;

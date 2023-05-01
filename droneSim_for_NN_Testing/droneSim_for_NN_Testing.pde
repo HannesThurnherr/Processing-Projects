@@ -5,7 +5,7 @@ import java.util.*;
 int gen;
 int population;
 ArrayList<Drone> drones;
-int[] layout = {8,10,2};
+int[] layout = {8,5,5,2};
 Target t = new Target(750, 250, 30);
 Boolean reached =false;
 
@@ -53,7 +53,7 @@ void draw() {
   t.show();
   fill(255, 0, 0);
   drones.get(0).show();
-  //drones.get(0).brain.show(10,10,200,false);  //displaying Neural Network of best Performance
+  drones.get(0).brain.show(10,10,200,false);  //displaying Neural Network of best Performance
   fill(255);
 
 

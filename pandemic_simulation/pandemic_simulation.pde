@@ -4,9 +4,9 @@ ArrayList<Person> people = new ArrayList();
 float day = 50;
 int pop = 1000;
 
-float blocks = 2;
+float blocks = 4;
 
-float transProb = 0.0025;
+float transProb = 0.0012;
 
 ArrayList<Float> cases = new ArrayList();
 

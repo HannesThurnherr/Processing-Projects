@@ -1,3 +1,5 @@
+
+
 class Node implements Comparable<Node>{
     int value = 0;
     Letter letter;

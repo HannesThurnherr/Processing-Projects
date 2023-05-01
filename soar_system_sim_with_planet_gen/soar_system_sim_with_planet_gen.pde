@@ -4,6 +4,10 @@ ArrayList<Body> bodies;
 Boolean makingBody = false;
 Boolean finishedBody = false;
 
+//Make balls boundce off walls
+boolean bounceOffWalls = false;
+
+
 float startX = 0;
 float startY = 0;
 float startVX = 0;
@@ -22,7 +26,7 @@ void setup(){
 void draw(){
   background(100, 100, 100, 100);
   for(int i = 0; i<bodies.size(); i++){
-    bodies.get(i).update(bodies);
+    bodies.get(i).update(bodies, bounceOffWalls);
   }
   for(int i = 0; i<bodies.size(); i++){
    // println("body "+i+"is at "+bodies.get(i).posx+", "+bodies.get(i).posy); 

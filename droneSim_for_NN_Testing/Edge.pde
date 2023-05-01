@@ -10,7 +10,7 @@ class Edge{
   
   void show(float inx,float iny,float outx,float outy){
     push();
-    stroke(250-colorShift,0.5*colorShift,colorShift);
+    stroke(250-colorShift,0.5*colorShift,colorShift, 150);
     strokeWeight(3);
     line(inx, iny, outx, outy);
     pop();
